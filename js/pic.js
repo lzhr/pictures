@@ -241,7 +241,7 @@ $(function() {
 
 
         var init = function() {
-            $.getJSON("http://wy-ei.com/photo-player/src/urls.json", function(data) {
+            $.getJSON("https://raw.githubusercontent.com/lzhr/pictures/gh-pages/src/urls.json", function(data) {
                 imageSet.add(data.urls);
             });
         };

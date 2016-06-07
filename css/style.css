@@ -49,9 +49,9 @@ button{
 		z-index: 100;
 		background-color: #333;
 		border-radius: 0 5px 5px 0;
-		-webkit-transition: 500ms;
-		-o-transition: 500ms;
-		transition: 500ms;
+		-webkit-transition: 750ms;
+		-o-transition: 750ms;
+		transition: 750ms;
 	}
 	.panel button{
 		display: inline-block;
@@ -79,9 +79,9 @@ button{
 	}
 	.panel-show{
 		left: -380px;
-		-webkit-transition: 500ms;
-		-o-transition: 500ms;
-		transition: 500ms;
+		-webkit-transition: 750ms;
+		-o-transition: 750ms;
+		transition: 750ms;
 	} 
 }
 
@@ -104,9 +104,9 @@ button{
 		z-index: 0;
 		box-shadow:0 -1px 1px -1px #ccc;
 		opacity: 0;
-		-webkit-transition: 1000ms;
-		-o-transition: 1000ms;
-		transition: 1000ms;
+		-webkit-transition: 1500ms;
+		-o-transition: 1500ms;
+		transition: 1500ms;
 	}
 	.panel button{
 		display: inline-block;
@@ -132,8 +132,8 @@ button{
 	.panel-show{
 		opacity: 1!important;
 		z-index: 20;
-		-webkit-transition: 1000ms;
-		-o-transition: 1000ms;
-		transition: 1000ms;
+		-webkit-transition: 1500ms;
+		-o-transition: 1500ms;
+		transition: 1500ms;
 	}
 }
