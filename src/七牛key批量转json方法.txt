@@ -1,0 +1,12 @@
+qshell工具http://developer.qiniu.com/code/v6/tool/qshell.html
+
+qshell domains <Bucket>
+     domain
+qshell listbucket <Bucket> [<Prefix>] <ListBucketResultFile> >bucket.txt
+     Key\tSize\tHash\tPutTime\tMimeType\tEndUser
+	 
+	 
+notepad++
+正则表达式（我还没总结出来，QAQ）
+
+url: http://domain/key
