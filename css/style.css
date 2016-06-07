@@ -83,6 +83,25 @@ button{
 		-o-transition: 750ms;
 		transition: 750ms;
 	} 
+	.tips{
+		position: absolute;
+		width: 100px;
+		height: 20px;
+		right: 0;
+		bottom: 8px;
+		z-index: 100;
+		background-color: #4169E1;
+		border-radius: 0 5px 5px 0;
+		-webkit-transition: 750ms;
+		-o-transition: 750ms;
+		transition: 750ms;
+	}
+	.tips-show{
+		right: -80px;
+		-webkit-transition: 750ms;
+		-o-transition: 750ms;
+		transition: 750ms;
+	} 
 }
 
 @media screen and (max-width: 900px){
@@ -136,4 +155,23 @@ button{
 		-o-transition: 1500ms;
 		transition: 1500ms;
 	}
+	.tips{
+		position: absolute;
+		width: 100px;
+		height: 20px;
+		right: 0;
+		bottom: 8px;
+		z-index: 100;
+		background-color: #4169E1;
+		border-radius: 0 5px 5px 0;
+		-webkit-transition: 750ms;
+		-o-transition: 750ms;
+		transition: 750ms;
+	}
+	.tips-show{
+		right: -80px;
+		-webkit-transition: 750ms;
+		-o-transition: 750ms;
+		transition: 750ms;
+	} 
 }

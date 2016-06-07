@@ -135,7 +135,7 @@ $(function() {
                         } else {
                             $this.trigger('next');
                         }
-                    }, 2000);
+                    }, 2345);
                     $img.data('intervalId', id);
                     $img.data('playing', true);
                     $('#random-play').text('暂停播放');
@@ -171,7 +171,7 @@ $(function() {
                 $fullscreenToggle = $('#fullscreen-toggle');
 
             $('body').click(function() {
-                $panel.toggleClass('panel-show');
+                $panel.toggleClass('panel-show','tips-show');
             });
 
             $(window).resize(function() {
