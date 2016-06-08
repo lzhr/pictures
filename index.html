@@ -5,6 +5,7 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/music.css">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 </head>
@@ -12,21 +13,29 @@
 <div class="wrap">
 	<!--<img id='photo' class="default-size" src="http://o8e7wupw0.bkt.clouddn.com/bg2.jpg">-->
 	<img id='photo' class="default-size" src="http://o8e7wupw0.bkt.clouddn.com/biye/yasuo/_MG_8357.jpg" title='支持方向键切换图片'>
-	<audio controls="controls" loop="false" hidden="true" >
+	<!--<audio controls="controls" loop="false" hidden="true" >
 		<source src='http://link.hhtjim.com/163/399925764.mp3'>
-	</audio>
+	</audio>-->
 </div>
 
 <div class="panel">
 	<button id='order-play' title='支持方向键切换图片'>顺序播放</button>
 	<button id='random-play' title='支持方向键切换图片'>随机播放</button>
-	<button id='music-toggle' title='半壶纱--格格君'>播放BGM</button>
+	<!--<button id='music-toggle' title='半壶纱--格格君'>播放BGM</button>-->
 	<button id='fullscreen-toggle'>进入全屏</button>	
 </div>
 <!--<div class="tips">
 	<a class="fa fa-arrows " aria-hidden="true"></a>支持方向键切换
 </div>-->
+<span id="musicControl">
+        <a id="mc_play" class="stop" onclick="play_music();">
+            <audio id="musicfx" loop="loop" autoplay="autoplay">
+                <source src="http://link.hhtjim.com/163/399925764.mp3" type="audio/mpeg">
+            </audio>
+        </a>
+ </span>
 <script src='js/jquery-2.1.4.min.js'></script>
 <script src='js/pic.js'></script>
+<script src='js/bgm.js'></script>
 </body>
 </html>
