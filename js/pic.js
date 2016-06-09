@@ -241,7 +241,7 @@ $(function() {
 
 
         var init = function() {
-            $.getJSON("https://raw.githubusercontent.com/lzhr/pictures/gh-pages/src/urls.json", function(data) {
+            $.getJSON("https://lzhrsmile.wilddogio.com/urls.json", function(data) {
                 imageSet.add(data.urls);
             });
         };
