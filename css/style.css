@@ -10,11 +10,16 @@ body{
   overflow: hidden;
   background-size: 100%;
   font-size: 16px;
+  background-color: rgba(10,10,10,0.9);
 }
 
 
 .wrap{
   position: absolute;
+  left: 10px;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
   z-index: 1;
   box-sizing:border-box;
   height: 100%;
