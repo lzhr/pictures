@@ -242,7 +242,7 @@ $(function() {
 
         var init = function() {
             $.getJSON("https://lzhrsmile.wilddogio.com/urls.json", function(data) {
-                imageSet.add(data.urls);
+                imageSet.add(data);
             });
         };
 
