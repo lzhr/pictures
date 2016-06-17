@@ -238,13 +238,30 @@ $(function() {
 
 
 
-
-
+		var system = { 
+            win: false, 
+            mac: false, 
+            xll: false, 
+            ipad:false 
+        }; 
+        //检测平台 
+        var p = navigator.platform; 
+        system.win = p.indexOf("Win") == 0; 
+        system.mac = p.indexOf("Mac") == 0; 
+        system.x11 = (p == "X11") || (p.indexOf("Linux") == 0); 
+        system.ipad = (navigator.userAgent.match(/iPad/i) != null)?true:false; 
+		
+		if (system.win || system.mac || system.xll||system.ipad) { 
+			var json="https://lzhrsmile.wilddogio.com/biyezhao.json";
+        } else { 
+			var json="https://lzhrsmile.wilddogio.com/biyezhao-mobile.json";
+        } 
+		
         var init = function() {
-            $.getJSON("https://lzhrsmile.wilddogio.com/biyezhao.json", function(data) {
-                imageSet.add(data.urls);
-            });
-        };
+			$.getJSON(json, function(data) {
+				imageSet.add(data.urls);
+			});
+		};
 
         var toggleAutoPlay = function(isRandom) {
             $img.trigger('toggleAutoPlay');
